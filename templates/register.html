@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to microblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="$STATIC_DIR_JS/register.js"></script>
+</head>
+<body>
+
+    <h1>Register new user</h1>
+    <p><a href="$index_url">Index</a></p>
+    <p><a href="$login_url">Login</a></p>
+    <p><a href="$register_url">Register</a></p>
+    <p><a href="$profile_url">Profile</a></p>
+    <p><a href="$logout_url">Logout</a></p>
+
+    <form action="" method="POST">
+        <p>
+            <label for="username_id">Username
+                <input type="text" name="username" id="username_id" required placeholder="Enter username" value="$username_value">
+            </label>
+            <small>Username is unique is casesensetive</small>
+        </p>
+        <p>
+            <label for="email_id">Email
+                <input type="text" name="email" id="email_id" required placeholder="Enter email" value="$email_value">
+            </label>
+            <small>Email is unique</small>
+        </p>
+        <p>
+            <label for="display_name_id">Display name
+                <input type="text" name="display_name" id="display_name_id" required placeholder="Enter name for display" value="$display_name_value">
+            </label>
+            <small>Your public name</small>
+        </p>
+        <p>
+            <label for="password_id">Password
+                <input type="password" name="password" id="password_id" required placeholder="Enter password" value="$password_value">
+            </label>
+            <small>Password restrictions</small>
+            <dt>
+                <dd>Length from 5 to 50 characters</dd>
+                <dd>Contains letters and numbers</dd>
+            </dt>
+        </p>
+        <p><button type="submit" id="register">Register</button></p>
+        <p><button type="reset">Reset</button></p>
+    </form>
+
+</body>
+</html>
