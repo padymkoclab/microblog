@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+            </div>
+            <div>
+                <div id="errors"></div>
+                <form action="" method="GET" id="form_add_cookie">
+                    <label for="input_cookie_name">Name:</label>
+                    <input type="text" name="input_cookie_name" id="input_cookie_name">
+                    <label for="input_cookie_value">Value:</label>
+                    <input type="text" name="input_cookie_value" id="input_cookie_value">
+                    <input type="submit" value="Add cookie">
+                </form>
+                <input type="button" value="Clear cookies" id="btn_clear_cookies">
+            </div>
+        </div>
+        <div id="list_cookies"></div>
+    </div>
+
+    <script src="./cookies.js"></script>
+
+</body>
+</html>
